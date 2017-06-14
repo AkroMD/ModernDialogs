@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Users\Megac\Desktop\Временно\ProjectDemoDialogs.dproj=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.027,=H:\Программирвоание\Пример со шрифтами\FMX.FontGlyphs.Android.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.162,H:\Программирвоание\Пример со шрифтами\FMX.FontGlyphs.Android.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.208,H:\Программирвоание\Учись и играй\Шрифт\FontAwesome.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.473,C:\Users\Megac\Desktop\Временно\Диалоги\UAkroDialogs.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.985,=C:\Users\Megac\Desktop\Временно\Диалоги\UAkroDialogs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.983,=H:\Программирвоание\Учись и играй\Шрифт\FontAwesome.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.970,=H:\Программирвоание\Учись и играй\Шрифт\FMX.FontGlyphs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.181,H:\Программирвоание\Учись и играй\Шрифт\FMX.FontGlyphs.Android.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.956,=H:\Программирвоание\Учись и играй\Шрифт\FMX.FontGlyphs.Android.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.199,H:\Программирвоание\Учись и играй\Шрифт\FMX.FontGlyphs.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.594,=H:\Программирвоание\Учись и играй\Диалоги\UAkroDialogs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.010,H:\Программирвоание\Учись и играй\Диалоги\UAkroDialogs.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.971,=C:\Users\Megac\Desktop\Временно\Диалоги\FMX.FontGlyphs.Android.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.797,=C:\Users\Megac\Desktop\Временно\Диалоги\UAkroDialogs.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.375,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.486,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.694,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.098,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.930,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.105,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.050,=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.022,H:\Программирвоание\Учись и играй\Диалоги\UModernDialogsAkro.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.686,C:\Users\Megac\Desktop\Временно\UDemoDialogs.pas=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.670,=C:\Users\Megac\Desktop\Временно\Диалоги\UModernDialogsAkro.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.606,=H:\Программирвоание\Учись и играй\Диалоги\UModernDialogsAkro.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.686,C:\Users\Megac\Desktop\Временно\UDemoDialogs.fmx=C:\Users\Megac\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017.06.14 16:05:45.477,=H:\Программирвоание\Пример диалогов(ByAkro)\Dialogs\FMX.FontGlyphs.Android.pas</Transaction>
+    <Transaction>2017.06.14 16:05:45.491,=H:\Программирвоание\Пример диалогов(ByAkro)\Dialogs\FMX.FontGlyphs.pas</Transaction>
+    <Transaction>2017.06.14 16:05:45.505,=H:\Программирвоание\Пример диалогов(ByAkro)\Dialogs\UAkroDialogs.pas</Transaction>
+    <Transaction>2017.06.14 16:05:45.640,=H:\Программирвоание\Пример диалогов(ByAkro)\Dialogs\UModernDialogsAkro.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="LFSGL7LBGEZ9D6CE"/>
+		<PMainConf iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-analytics-v2.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="google-play-services.dex.jar"/>
+    <File Path="Dialogs"/>
+    <File Path="Dialogs\FMX.FontGlyphs.Android.pas"/>
+    <File Path="Dialogs\FMX.FontGlyphs.pas"/>
+    <File Path="Dialogs\UAkroDialogs.pas"/>
+    <File Path="Dialogs\UModernDialogsAkro.pas"/>
+    <File Path="UDemoDialogs.pas"/>
+    <File Path="UDemoDialogs.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>
