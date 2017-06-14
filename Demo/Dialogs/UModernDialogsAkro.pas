@@ -1,10 +1,10 @@
-unit UModernDialogsAkro;  //Versions 1.0.0 14.06.17
+п»їunit UModernDialogsAkro;  //Versions 1.0.0 14.06.17
 
 //By AkroMD
 {
-Перед использованием убедитесь, что вам действительно это нужно, а то мало ли....
-Обязательна установка шрифта FontAwesome: под Windows копируем в шрифты,
-под Android в Deployment заливаем в .\assets\internal
+РџРµСЂРµРґ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј СѓР±РµРґРёС‚РµСЃСЊ, С‡С‚Рѕ РІР°Рј РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЌС‚Рѕ РЅСѓР¶РЅРѕ, Р° С‚Рѕ РјР°Р»Рѕ Р»Рё....
+РћР±СЏР·Р°С‚РµР»СЊРЅР° СѓСЃС‚Р°РЅРѕРІРєР° С€СЂРёС„С‚Р° FontAwesome: РїРѕРґ Windows РєРѕРїРёСЂСѓРµРј РІ С€СЂРёС„С‚С‹,
+РїРѕРґ Android РІ Deployment Р·Р°Р»РёРІР°РµРј РІ .\assets\internal
 }
 //
 
@@ -16,22 +16,22 @@ interface
         UAkroDialogs;
 
   type
-  //Для добавления данных в диалог ввода
+  //Р”Р»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ РґР°РЅРЅС‹С… РІ РґРёР°Р»РѕРі РІРІРѕРґР°
   TInputDialogValueList = class(UAkroDialogs.TInputDialogValueList)
   end;
 
-  //Тип вводимых символов
+  //РўРёРї РІРІРѕРґРёРјС‹С… СЃРёРјРІРѕР»РѕРІ
   TTypeInputSymbols = UAkroDialogs.TTypeInputSymbols;
 
   TModernDialogs = class abstract
   private
-    //Диалог простого сообщения
+    //Р”РёР°Р»РѕРі РїСЂРѕСЃС‚РѕРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ
     Procedure MesgDialog(AHeader, AText: String; ABitmap: TBitmap; ACritical: Boolean);
-    //Диалог сообщения с вводом
+    //Р”РёР°Р»РѕРі СЃРѕРѕР±С‰РµРЅРёСЏ СЃ РІРІРѕРґРѕРј
     Procedure InpDialog(AValueList: TInputDialogValueList);
-    //Диалог с вопросом
+    //Р”РёР°Р»РѕРі СЃ РІРѕРїСЂРѕСЃРѕРј
     Procedure QstDialog(AHeader, AText: String; OnOkEvent: TNotifyEvent);
-    //Диалог с подсветкой
+    //Р”РёР°Р»РѕРі СЃ РїРѕРґСЃРІРµС‚РєРѕР№
     Procedure FlshDialog(AHeader, AText: String; AX, AY, AWidth, AHeight: Single);
   public
     Constructor ShowMessage(AHeader, AText: String; ABitmap: TBitmap; ACritical: Boolean); overload;

@@ -1,4 +1,4 @@
-unit UAkroDialogs;
+п»їunit UAkroDialogs;
 
 interface
 
@@ -164,19 +164,19 @@ interface
   const
 
       RightChar : array[0..58] of Char = ('a','b','c','d','q','w','e','r','t','y','u','i','o','p','s','f',
-                                            'g','h','j','k','l','x','v','n','m','z','а','б','в','г','д','е',
-                                            'ж','з','и','к','л','м','н','о','п','р','с','т','у','ф','х','ч',
-                                            'ш','щ','ь','ъ','э','ю','я','й','ё','ц','ы');
+                                            'g','h','j','k','l','x','v','n','m','z','Р°','Р±','РІ','Рі','Рґ','Рµ',
+                                            'Р¶','Р·','Рё','Рє','Р»','Рј','РЅ','Рѕ','Рї','СЂ','СЃ','С‚','Сѓ','С„','С…','С‡',
+                                            'С€','С‰','СЊ','СЉ','СЌ','СЋ','СЏ','Р№','С‘','С†','С‹');
 
       RightCharAdd : array[0..68] of Char = ('0','1','2','3','4','5','6','7','8','9','a','b','c','d','q','w',
                                             'e','r','t','y','u','i','o','p','s','f','g','h','j','k','l','x',
-                                            'v','n','m','z','а','б','в','г','д','е','ж','з','и','к','л','м',
-                                            'н','о','п','р','с','т','у','ф','х','ч','ш','щ','ь','ъ','э','ю',
-                                            'я','й','ё','ц','ы');
+                                            'v','n','m','z','Р°','Р±','РІ','Рі','Рґ','Рµ','Р¶','Р·','Рё','Рє','Р»','Рј',
+                                            'РЅ','Рѕ','Рї','СЂ','СЃ','С‚','Сѓ','С„','С…','С‡','С€','С‰','СЊ','СЉ','СЌ','СЋ',
+                                            'СЏ','Р№','С‘','С†','С‹');
 
       RightCharNumber: array[0..9] of Char = ('0','1','2','3','4','5','6','7','8','9');
 
-      VowelsChar: array[0..10] of Char = ('а','е','и','о','у','э','ю','я','й','ё','ы');
+      VowelsChar: array[0..10] of Char = ('Р°','Рµ','Рё','Рѕ','Сѓ','СЌ','СЋ','СЏ','Р№','С‘','С‹');
 
       fa_check = widechar($F00C);
       fa_thumbs_down = widechar($F165);
@@ -203,11 +203,11 @@ implementation
 function CheckTrueSymbol(Symbol: Char; TrueChars: array of Char): Boolean;
     var i: Integer;
 begin
-  //Полагаем что символ валиден
+  //РџРѕР»Р°РіР°РµРј С‡С‚Рѕ СЃРёРјРІРѕР» РІР°Р»РёРґРµРЅ
   Result := True;
   for I := Low(TrueChars) to High(TrueChars) do
     if Symbol = TrueChars[i] then Exit;
-  //Если не нашли в массиве, то считаем его невалидным
+  //Р•СЃР»Рё РЅРµ РЅР°С€Р»Рё РІ РјР°СЃСЃРёРІРµ, С‚Рѕ СЃС‡РёС‚Р°РµРј РµРіРѕ РЅРµРІР°Р»РёРґРЅС‹Рј
   Result := False;
 end;
 
@@ -251,14 +251,14 @@ begin
 
   Result := 0;
 
-  //Удаляем лишние пробелы
+  //РЈРґР°Р»СЏРµРј Р»РёС€РЅРёРµ РїСЂРѕР±РµР»С‹
   TmpText := Trim(Text);
 
   While pos('  ',TmpText) <> 0 do
     TmpText := StringReplace(TmpText,'  ',' ',[rfreplaceall]);
   //
 
-  //Разбиваем на слова
+  //Р Р°Р·Р±РёРІР°РµРј РЅР° СЃР»РѕРІР°
   StartPos := Low(TmpText);
   for I := Low(TmpText) to High(TmpText) do
     begin
@@ -292,16 +292,16 @@ begin
 
   if Length(Words) = 0 then Exit;
 
-  //Рассчитываем константы
-    //Количество символов в строке
+  //Р Р°СЃСЃС‡РёС‚С‹РІР°РµРј РєРѕРЅСЃС‚Р°РЅС‚С‹
+    //РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ СЃС‚СЂРѕРєРµ
     CountSymbolsStroke := Round((Width * 1.7) / FontSize);
     //
-    //Высота одной строк
+    //Р’С‹СЃРѕС‚Р° РѕРґРЅРѕР№ СЃС‚СЂРѕРє
     HeightStroke := FontSize * 5 / 3;
     //
   //
 
-  //Считаем высоту строки
+  //РЎС‡РёС‚Р°РµРј РІС‹СЃРѕС‚Сѓ СЃС‚СЂРѕРєРё
   CurrentWidth := 0;
   Result := HeightStroke;
   Text := '';
@@ -462,7 +462,7 @@ begin
   AResult := NewValue;
   if Length(AResult) > 0 then
     begin
-      TextName.Text := 'Не может быть пустым';
+      TextName.Text := 'РќРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј';
       SetFocus(AResult);
       Exit;
     end;
@@ -479,7 +479,7 @@ procedure TInputDialog.ChangeTrackingEdit(Sender: TObject);
       Result: Boolean;
 begin
 
-  //TagString используем как временное хранилище
+  //TagString РёСЃРїРѕР»СЊР·СѓРµРј РєР°Рє РІСЂРµРјРµРЅРЅРѕРµ С…СЂР°РЅРёР»РёС‰Рµ
   if (TEdit(Sender).text.Equals(TEdit(Sender).TagString)) then Exit;
 
   if (Length(TEdit(Sender).text) = 0) then
@@ -498,10 +498,10 @@ begin
     2: Result := CheckTrueSymbol(Symbols[low(Symbols)],RightCharNumber);
   end;
 
-  //Text - используем для вывода сообщений
+  //Text - РёСЃРїРѕР»СЊР·СѓРµРј РґР»СЏ РІС‹РІРѕРґР° СЃРѕРѕР±С‰РµРЅРёР№
   if not Result then
     begin
-      TextName.Text := 'Недопустимые символы';
+      TextName.Text := 'РќРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹';
       TextName.TextSettings.FontColor := TAlphaColors.Red;
       (Sender as TEdit).Text := TEdit(Sender).TagString;
     end
@@ -628,7 +628,7 @@ begin
   TextButtonCancel.Parent := RRButtonCancel;
   TextButtonCancel.Align := TAlignLayout.Client;
   TextButtonCancel.HitTest := False;
-  TextButtonCancel.Text := 'Отмена';
+  TextButtonCancel.Text := 'РћС‚РјРµРЅР°';
   TextButtonCancel.TextSettings.HorzAlign := TTextAlign.Leading;
   TextButtonCancel.Font.Size := FontSizeButton;
   TextButtonCancel.Margins.Left := 3;
@@ -889,7 +889,7 @@ begin
   TextButtonOk.Parent := RRButtonOk;
   TextButtonOk.Align := TAlignLayout.Client;
   TextButtonOk.HitTest := False;
-  TextButtonOk.Text := 'Ок';
+  TextButtonOk.Text := 'РћРє';
   TextButtonOk.TextSettings.HorzAlign := TTextAlign.Leading;
   TextButtonOk.Font.Size := FontSizeButton;
   TextButtonOk.Margins.Left := 3;
@@ -1098,13 +1098,13 @@ begin
   TextButtonNo.Parent := RRButtonNo;
   TextButtonNo.Align := TAlignLayout.Client;
   TextButtonNo.HitTest := False;
-  TextButtonNo.Text := 'Нет';
+  TextButtonNo.Text := 'РќРµС‚';
   TextButtonNo.TextSettings.HorzAlign := TTextAlign.Leading;
   TextButtonNo.Font.Size := FontSizeButton;
   TextButtonNo.Margins.Left := 3;
   TextButtonNo.Font.Family := FontDialog;
 
-  TextButtonOk.Text := 'Да';
+  TextButtonOk.Text := 'Р”Р°';
 
   TextIcon := TText.Create(LayMain);
   TextIcon.Parent := LayMain;
@@ -1246,7 +1246,7 @@ begin
 
   Panel.Align := TAlignLayout.None;
 
-  //Размещение
+  //Р Р°Р·РјРµС‰РµРЅРёРµ
   if FlashMessages.First.X < TForm(Owner).Width / 2
     then
       begin

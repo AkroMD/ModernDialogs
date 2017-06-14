@@ -1,4 +1,4 @@
-unit UDemoDialogs;
+п»їunit UDemoDialogs;
 
 interface
 
@@ -116,19 +116,19 @@ uses UModernDialogsAkro;
 
 procedure TForm1.ButFlashDial1Click(Sender: TObject);
 begin
-  TModernDialogs.FlashDialog('Подсветка','Эта кнопка очень важна',ButFlashDial1);
+  TModernDialogs.FlashDialog('РџРѕРґСЃРІРµС‚РєР°','Р­С‚Р° РєРЅРѕРїРєР° РѕС‡РµРЅСЊ РІР°Р¶РЅР°',ButFlashDial1);
 end;
 
 procedure TForm1.ButFlashDial2Click(Sender: TObject);
 begin
-  TModernDialogs.FlashDialog('Некоторая область на экране',100, 200);
+  TModernDialogs.FlashDialog('РќРµРєРѕС‚РѕСЂР°СЏ РѕР±Р»Р°СЃС‚СЊ РЅР° СЌРєСЂР°РЅРµ',100, 200);
 end;
 
 procedure TForm1.ButFlashDial3Click(Sender: TObject);
 begin
-  TModernDialogs.FlashDialog('Подсветка','Первый пошел',ButFlashDial1);
-  TModernDialogs.FlashDialog('Подсветка','Второй следом',ButFlashDial2);
-  TModernDialogs.FlashDialog('Подсветка','Третий отстает',ButFlashDial3);
+  TModernDialogs.FlashDialog('РџРѕРґСЃРІРµС‚РєР°','РџРµСЂРІС‹Р№ РїРѕС€РµР»',ButFlashDial1);
+  TModernDialogs.FlashDialog('РџРѕРґСЃРІРµС‚РєР°','Р’С‚РѕСЂРѕР№ СЃР»РµРґРѕРј',ButFlashDial2);
+  TModernDialogs.FlashDialog('РџРѕРґСЃРІРµС‚РєР°','РўСЂРµС‚РёР№ РѕС‚СЃС‚Р°РµС‚',ButFlashDial3);
 end;
 
 procedure TForm1.ButSetColorButtonClick(Sender: TObject);
@@ -151,43 +151,43 @@ end;
 
 procedure TForm1.ButSM1Click(Sender: TObject);
 begin
-  TModernDialogs.ShowMessage('Заголовок','Обычный житейский текст');
+  TModernDialogs.ShowMessage('Р—Р°РіРѕР»РѕРІРѕРє','РћР±С‹С‡РЅС‹Р№ Р¶РёС‚РµР№СЃРєРёР№ С‚РµРєСЃС‚');
 end;
 
 procedure TForm1.ButSM2Click(Sender: TObject);
 begin
-  TModernDialogs.ShowMessage('Обычный житейский текст без заголовка');
+  TModernDialogs.ShowMessage('РћР±С‹С‡РЅС‹Р№ Р¶РёС‚РµР№СЃРєРёР№ С‚РµРєСЃС‚ Р±РµР· Р·Р°РіРѕР»РѕРІРєР°');
 end;
 
 procedure TForm1.ButSM3Click(Sender: TObject);
   var Text: String;
 begin
-  Text := 'Обычный житейский текст который расстянули на миллионы лет вперед дабы отсрочить кончину Delphi! Не дадим узурпаторам заменить наши правила, не дадим им сломать волю нашу! Вообщем длинный текст получился';
-  TModernDialogs.ShowMessage('Заголовок',Text);
+  Text := 'РћР±С‹С‡РЅС‹Р№ Р¶РёС‚РµР№СЃРєРёР№ С‚РµРєСЃС‚ РєРѕС‚РѕСЂС‹Р№ СЂР°СЃСЃС‚СЏРЅСѓР»Рё РЅР° РјРёР»Р»РёРѕРЅС‹ Р»РµС‚ РІРїРµСЂРµРґ РґР°Р±С‹ РѕС‚СЃСЂРѕС‡РёС‚СЊ РєРѕРЅС‡РёРЅСѓ Delphi! РќРµ РґР°РґРёРј СѓР·СѓСЂРїР°С‚РѕСЂР°Рј Р·Р°РјРµРЅРёС‚СЊ РЅР°С€Рё РїСЂР°РІРёР»Р°, РЅРµ РґР°РґРёРј РёРј СЃР»РѕРјР°С‚СЊ РІРѕР»СЋ РЅР°С€Сѓ! Р’РѕРѕР±С‰РµРј РґР»РёРЅРЅС‹Р№ С‚РµРєСЃС‚ РїРѕР»СѓС‡РёР»СЃСЏ';
+  TModernDialogs.ShowMessage('Р—Р°РіРѕР»РѕРІРѕРє',Text);
 end;
 
 procedure TForm1.ButSM4Click(Sender: TObject);
 begin
-  TModernDialogs.ShowMessage('Заголовок','Здесь может быть ваша реклама',Image1.Bitmap);
+  TModernDialogs.ShowMessage('Р—Р°РіРѕР»РѕРІРѕРє','Р—РґРµСЃСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІР°С€Р° СЂРµРєР»Р°РјР°',Image1.Bitmap);
 end;
 
 procedure TForm1.ButSM5Click(Sender: TObject);
 begin
-  TModernDialogs.ShowMessage('Короче','Не нажимай',nil,True);
+  TModernDialogs.ShowMessage('РљРѕСЂРѕС‡Рµ','РќРµ РЅР°Р¶РёРјР°Р№',nil,True);
 end;
 
 procedure TForm1.Button11Click(Sender: TObject);
   var i: Integer;
       IDL: TInputDialogValueList;
 begin
-  IDL := TInputDialogValueList.NewList('Введите:',ShowAnswerInput);
+  IDL := TInputDialogValueList.NewList('Р’РІРµРґРёС‚Рµ:',ShowAnswerInput);
   SetLength(InputMes,Round(SpiinBInputEdit.Value));
   SetLength(InputMesNum,0);
 
   for I := 0 to Round(SpiinBInputEdit.Value)-1 do
     begin
       InputMes[i] := '';
-      IDL.AddNew('Edit' + I.ToString,'Текст №' + I.ToString,'',InputMes[i],TTypeInputSymbols.LettersAndNumbers,0,True);
+      IDL.AddNew('Edit' + I.ToString,'РўРµРєСЃС‚ в„–' + I.ToString,'',InputMes[i],TTypeInputSymbols.LettersAndNumbers,0,True);
     end;
 
   TModernDialogs.NewInputDialog(IDL);
@@ -198,14 +198,14 @@ procedure TForm1.Button12Click(Sender: TObject);
   var i: Integer;
       IDL: TInputDialogValueList;
 begin
-  IDL := TInputDialogValueList.NewList('Введите:',ShowAnswerInput);
+  IDL := TInputDialogValueList.NewList('Р’РІРµРґРёС‚Рµ:',ShowAnswerInput);
   SetLength(InputMes,Round(SpiinBInputEdit.Value));
   SetLength(InputMesNum,0);
 
   for I := 0 to Round(SpiinBInputEdit.Value)-1 do
     begin
       InputMes[i] := '';
-      IDL.AddNew('Edit' + I.ToString,'Текст №' + I.ToString,'',InputMes[i],TTypeInputSymbols.LettersAndNumbers,5);
+      IDL.AddNew('Edit' + I.ToString,'РўРµРєСЃС‚ в„–' + I.ToString,'',InputMes[i],TTypeInputSymbols.LettersAndNumbers,5);
     end;
 
   TModernDialogs.NewInputDialog(IDL);
@@ -224,7 +224,7 @@ end;
 
 procedure TForm1.Button15Click(Sender: TObject);
 begin
-  TModernDialogs.QuestDialog('Вопрос','Есть ли жизнь после Delphi?',ShowAnswerQuestion);
+  TModernDialogs.QuestDialog('Р’РѕРїСЂРѕСЃ','Р•СЃС‚СЊ Р»Рё Р¶РёР·РЅСЊ РїРѕСЃР»Рµ Delphi?',ShowAnswerQuestion);
 end;
 
 procedure TForm1.Button16Click(Sender: TObject);
@@ -261,14 +261,14 @@ procedure TForm1.Button6Click(Sender: TObject);
   var i: Integer;
       IDL: TInputDialogValueList;
 begin
-  IDL := TInputDialogValueList.NewList('Введите:',ShowAnswerInput);
+  IDL := TInputDialogValueList.NewList('Р’РІРµРґРёС‚Рµ:',ShowAnswerInput);
   SetLength(InputMes,0);
   SetLength(InputMesNum,Round(SpiinBInputEdit.Value));
 
   for I := 0 to Round(SpiinBInputEdit.Value) - 1 do
     begin
       InputMesNum[i] := 0;
-      IDL.AddNew('Edit' + I.ToString,'Текст №' + I.ToString,InputMesNum[i].ToString,InputMesNum[i]);
+      IDL.AddNew('Edit' + I.ToString,'РўРµРєСЃС‚ в„–' + I.ToString,InputMesNum[i].ToString,InputMesNum[i]);
     end;
 
   TModernDialogs.NewInputDialog(IDL);
@@ -284,14 +284,14 @@ procedure TForm1.Button8Click(Sender: TObject);
   var i: Integer;
       IDL: TInputDialogValueList;
 begin
-  IDL := TInputDialogValueList.NewList('Введите:',ShowAnswerInput);
+  IDL := TInputDialogValueList.NewList('Р’РІРµРґРёС‚Рµ:',ShowAnswerInput);
   SetLength(InputMes,Round(SpiinBInputEdit.Value));
     SetLength(InputMesNum,0);
 
   for I := 0 to Round(SpiinBInputEdit.Value) - 1 do
     begin
       InputMes[i] := '';
-      IDL.AddNew('Edit' + I.ToString,'Текст №' + I.ToString,'',InputMes[i],TTypeInputSymbols.Letters,0);
+      IDL.AddNew('Edit' + I.ToString,'РўРµРєСЃС‚ в„–' + I.ToString,'',InputMes[i],TTypeInputSymbols.Letters,0);
     end;
 
   TModernDialogs.NewInputDialog(IDL);
@@ -319,15 +319,15 @@ procedure TForm1.ShowAnswerInput(Sender: TObject);
 begin
   MemoInputDialog.Lines.Clear;
   for I := Low(InputMes) to High(InputMes) do
-    MemoInputDialog.Lines.Add(I.ToString + ' ответ: ' + InputMes[i]);
+    MemoInputDialog.Lines.Add(I.ToString + ' РѕС‚РІРµС‚: ' + InputMes[i]);
   for I := Low(InputMesNum) to High(InputMesNum) do
-    MemoInputDialog.Lines.Add(I.ToString + ' ответ: ' + InputMesNum[i].ToString);
+    MemoInputDialog.Lines.Add(I.ToString + ' РѕС‚РІРµС‚: ' + InputMesNum[i].ToString);
 end;
 
 procedure TForm1.ShowAnswerQuestion(Sender: TObject);
 begin
   MemoQuestDialog.Lines.Clear;
-  MemoQuestDialog.Lines.Add('Ответ на ваш вопрос...да кто его знает?');
+  MemoQuestDialog.Lines.Add('РћС‚РІРµС‚ РЅР° РІР°С€ РІРѕРїСЂРѕСЃ...РґР° РєС‚Рѕ РµРіРѕ Р·РЅР°РµС‚?');
 end;
 
 procedure TForm1.SpinBFontSizeButtonChange(Sender: TObject);
